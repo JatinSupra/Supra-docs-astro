@@ -1,0 +1,41 @@
+/* SUPRA BRAND COLORS - FORCED */
+:root,
+:root.dark {
+  /* Supra Red - Primary */
+  --primary: #DD1438 !important;
+  --primary-dark: #C01030 !important;
+  
+  /* Dark Mode Backgrounds */
+  --background: #131722 !important;
+  --card: #1D2A3A !important;
+  --popover: #1D2A3A !important;
+  --muted: #353F4A !important;
+  --input: #1D2A3A !important;
+  
+  /* Text */
+  --foreground: #FFFFFF !important;
+  --muted-foreground: #9EABB5 !important;
+  --card-foreground: #FFFFFF !important;
+  
+  /* Borders & Accents */
+  --border: #353F4A !important;
+  --accent: #DD1438 !important;
+  --ring: #DD1438 !important;
+  --outline: #DD1438 !important;
+}
+
+/* Light Mode */
+:root:not(.dark) {
+  --background: #FFFFFF !important;
+  --foreground: #131722 !important;
+  --card: #F2F5F5 !important;
+  --muted: #E2E6E6 !important;
+  --muted-foreground: #6A737C !important;
+  --border: #E2E6E6 !important;
+}
+
+/* Apply Supra Red to all primary elements */
+a { color: #DD1438 !important; }
+a:hover { color: #FF4D6B !important; }
+button.primary, .btn-primary { background: #DD1438 !important; }
+.border-primary { border-color: #DD1438 !important; }

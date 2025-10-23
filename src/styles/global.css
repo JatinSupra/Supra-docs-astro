@@ -21,3 +21,58 @@
 /**
  * * Here is where your normal site global styles would go, if adding this to an existing template
  */
+
+/* ===== SUPRA THEME COLORS ===== */
+:root {
+  /* Supra Brand Colors */
+  --primary: #DD1438;
+  --primary-dark: #C01030;
+  --background: #131722;
+  --foreground: #FFFFFF;
+  --muted: #353F4A;
+  --muted-foreground: #9EABB5;
+  --border: #353F4A;
+  --input: #1D2A3A;
+  --ring: #DD1438;
+  --outline: #DD1438;
+  
+  /* Cards & Popovers */
+  --card: #1D2A3A;
+  --card-foreground: #FFFFFF;
+  --popover: #1D2A3A;
+  --popover-foreground: #FFFFFF;
+  
+  /* Semantic Colors */
+  --success: #10B981;
+  --success-foreground: #FFFFFF;
+  --warning: #F59E0B;
+  --warning-foreground: #131722;
+  --error: #DD1438;
+  --error-foreground: #FFFFFF;
+  --info: #3B82F6;
+  --info-foreground: #FFFFFF;
+  
+  /* Accent */
+  --accent: #DD1438;
+  --accent-foreground: #FFFFFF;
+  --secondary: #353F4A;
+  --secondary-foreground: #FFFFFF;
+  
+  --radius: 0.5rem;
+}
+
+/* Light Mode */
+@media (prefers-color-scheme: light) {
+  :root:not(.dark) {
+    --background: #FFFFFF;
+    --foreground: #131722;
+    --muted: #E2E6E6;
+    --muted-foreground: #6A737C;
+    --card: #F2F5F5;
+    --card-foreground: #131722;
+    --border: #E2E6E6;
+  }
+}
+
+/* Supra Brand Colors */
+@import './supra-colors.css';

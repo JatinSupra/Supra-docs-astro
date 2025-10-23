@@ -11,17 +11,6 @@ const { headings, minHeadingLevel = 2 } = Astro.props as Props;
 // console.log(JSON.stringify(headings, null, 4));
 ---
 
-<div class="space-y-4">
-  <p class="font-heading text-lg font-medium tracking-wide">On this page</p>
-  <ul class="space-y-2 border-l">
-    {
-      headings.map((heading) => (
-        <TocLink heading={heading} class="toc-link" minHeadingLevel={minHeadingLevel} />
-      ))
-    }
-  </ul>
-</div>
-
 <!-- uses intersection observer to highlight which heading is in view -->
 <script>
   // Wrapper for Blog post content
