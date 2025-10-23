@@ -1,3 +1,7 @@
+<a href="https://supra.com">
+ <img width="100%" src="./public/supra_banner.png" alt="Supra Banner" />
+</a>
+
 # Supra L1 Astro Documentation
 Official documentation for Supra L1 on Astro.
 
