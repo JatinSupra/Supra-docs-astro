@@ -1,0 +1,79 @@
+# build output
+dist/
+
+# generated types
+.astro/
+
+# pagefind search for dev purposes
+public/pagefind/
+
+# dependencies
+node_modules/
+
+# logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# environment variables
+.env
+.env.production
+
+# macOS-specific files
+.DS_Store
+
+# Local hosting provider folders
+.netlify
+.vercel
+.wrangler
+
+# vitest
+coverage/
+coverage-final.json
+git push -u origin main
+
+# Dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Build outputs
+dist/
+.astro/
+.vercel/
+.netlify/
+
+# Environment variables
+.env
+.env.local
+.env.production
+.env.*.local
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+logs/
+*.log
+
+# Temporary files
+tmp/
+temp/
+
+# Cache
+.cache/
+.parcel-cache/
+
+# Pagefind
+pagefind/
