@@ -1,7 +1,7 @@
 import type { DocsSiteData } from "../types/configDataTypes";
 
 const docsSiteData: DocsSiteData = {
-  title: "Solstice",
+  title: "Supra",
   description:
     "A modern, fast, and feature-rich documentation theme built with Astro v5 and Tailwind CSS v4.",
   navSocials: [
@@ -36,7 +36,7 @@ const docsSiteData: DocsSiteData = {
   // default image for meta tags if the page doesn't have an image already
   defaultImage: {
     src: "/images/solstice.jpg",
-    alt: "Solstice",
+    alt: "Supra",
   },
   // Your information for SEO purposes
   author: {
