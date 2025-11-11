@@ -19,21 +19,16 @@ interface FooterLinkItem {
 }
 
 const docLinks: FooterLinkItem[] = [
-{ label: "Getting Started", href: `/${docsRoute}/welcome`, newTab: false },
-  { label: "Components", href: `/${docsRoute}/components`, newTab: false },
-  { label: "Get Solstice", href: "https://cosmicthemes.com/themes/solstice", newTab: true },
+{ label: "Whitepapers", href: "https://supra.com/research/", newTab: false },
+  { label: "Bug Bounty", href: "https://supra.com/bug-bounty/", newTab: false },
+  { label: "Audits", href: "https://docs.supra.com/audit-reports", newTab: true },
 ];
 
 const communityLinks: FooterLinkItem[] = [
-  { label: "GitHub", href: "https://github.com/Boston343", newTab: true },
-  { label: "Support", href: "https://cosmicthemes.com/support/", newTab: true },
+  { label: "Supra Dev Hub", href: "https://github.com/supra-labs/supra-dev-hub/", newTab: true },
+  { label: "Documentation Repository", href: "https://github.com/supra-labs/supra-dev-hub/", newTab: true },
 ];
 
-const legalLinks: FooterLinkItem[] = [
-  { label: "Privacy Policy", href: "/privacy", newTab: false },
-  { label: "Terms of Service", href: "/terms", newTab: false },
-  { label: "Cookie Policy", href: "/cookies", newTab: false },
-];
 ---
 
 <footer class="bg-background text-foreground mt-8 border-t">
@@ -54,7 +49,7 @@ const legalLinks: FooterLinkItem[] = [
 
       <!-- Documentation Links (Column 2) -->
       <div class="flex flex-col gap-2">
-        <h3 class="font-medium">Documentation</h3>
+        <h3 class="font-medium">Links</h3>
         {
           docLinks.map((link) => (
             <FooterLink href={link.href} newTab={link.newTab}>
@@ -66,7 +61,7 @@ const legalLinks: FooterLinkItem[] = [
 
       <!-- Community Links (Column 3) -->
       <div class="flex flex-col gap-2">
-        <h3 class="font-medium">Community</h3>
+        <h3 class="font-medium">Dev Links</h3>
         {
           communityLinks.map((link) => (
             <FooterLink href={link.href} newTab={link.newTab}>
@@ -74,25 +69,6 @@ const legalLinks: FooterLinkItem[] = [
             </FooterLink>
           ))
         }
-      </div>
-
-      <!-- Resources Links (Column 4) -->
-      <div class="flex flex-col gap-2">
-        <h3 class="font-medium">Legal</h3>
-        {
-          legalLinks.map((link) => (
-            <FooterLink href={link.href} newTab={link.newTab}>
-              {link.label}
-            </FooterLink>
-          ))
-        }
-      </div>
-      <div class="sr-only">
-        <p>
-          A website template crafted with love by <a href="https://cosmicthemes.com/"
-            >Cosmic Themes</a
-          >
-        </p>
       </div>
     </div>
   </div>

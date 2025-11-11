@@ -215,6 +215,35 @@
     margin-bottom: 1rem;
   }
 
+  .sl-link-card {
+    border-radius: var(--global-radius) !important;
+    background: color-mix(in srgb, var(--sl-color-white) 1%, transparent);
+    box-shadow: none;
+    .description {
+      font-size: var(--sl-text-sm);
+    }
+    &:hover {
+      border-color: var(--sl-color-accent-high);
+      background: var(--sl-color-gray-9);
+    }
+  }
+  
+  .group-label {
+    text-transform: capitalize;
+  }
+  
+  .sl-link-button {
+    font-weight: 500;
+  }
+  .sl-link-button.primary {
+    border-radius: var(--global-radius);
+    border: none;
+  }
+
+.sl-link-card a {
+  text-decoration: none;
+}
+
   /* <summary> marker styles */
   .docs-markdown-content summary:not(:where(.not-content, .not-content *))::marker,
   .docs-markdown-content summary:not(:where(.not-content, .not-content *))::-webkit-details-marker {

@@ -5,7 +5,7 @@ const sidebarNavData: DocsSidebarNavData = {
     {
       id: "overview",
       title: "Overview",
-      description: "Introduction to Supra EVM",
+      description: "Introduction to Supra MultiVM",
       icon: "tabler/file-text",
       sections: [
         {
@@ -16,13 +16,13 @@ const sidebarNavData: DocsSidebarNavData = {
     },
     {
       id: "build",
-      title: "Build on SupraEVM Beta",
-      description: "Start developing on Supra EVM",
+      title: "Build on Supra MultiVM",
+      description: "Start developing on Supra MultiVM",
       icon: "tabler/stack-2",
       sections: [
         {
           id: "build-on-supraev",
-          title: "Build on SupraEVM Beta",
+          title: "Start Building",
         },
       ],
     },
@@ -30,7 +30,7 @@ const sidebarNavData: DocsSidebarNavData = {
       id: "network",
       title: "Network Information",
       description: "RPC endpoints and network details",
-      icon: "tabler/api-app",
+      icon: "tabler/link",
       sections: [
         {
           id: "network-info",
@@ -40,9 +40,9 @@ const sidebarNavData: DocsSidebarNavData = {
     },
     {
       id: "deploy",
-      title: "Deploy Your First Contract",
+      title: "Learn & Deploy",
       description: "Step-by-step deployment guide",
-      icon: "tabler/bulb",
+      icon: "tabler/school",
       sections: [
         {
           id: "deploy-contract",

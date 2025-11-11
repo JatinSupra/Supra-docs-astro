@@ -10,14 +10,12 @@
 import navDataEn from "./en/navData.json";
 import sidebarNavDataEn from "./en/sidebarNavData.json";
 import siteDataEn from "./en/siteData.json";
-import testimonialDataEn from "./en/testimonialData.json";
 
 export const dataTranslations = {
   en: {
     siteData: siteDataEn,
     navData: navDataEn,
-    sidebarNavData: sidebarNavDataEn,
-    testimonialData: testimonialDataEn,
+    sidebarNavData: sidebarNavDataEn
   },
   
 } as const;

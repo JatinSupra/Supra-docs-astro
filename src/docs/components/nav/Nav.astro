@@ -7,7 +7,6 @@ import LanguageSelect from "@/docs/components/language-select/LanguageSelect.ast
 import MobileLanguageSelect from "@/docs/components/language-select/MobileLanguageSelect.astro";
 import NavLink from "@/docs/components/nav/NavLink.astro";
 import SidebarNav from "@/docs/components/nav/SidebarNav.astro";
-import Search from "@/docs/components/search/Search.astro";
 import SocialIconNav from "@/docs/components/social/SocialIconNav.astro";
 import ThemeToggle from "@/docs/components/theme-toggle/ThemeToggle.astro";
 import { locales } from "@/docs/config/siteSettings.json";
@@ -47,20 +46,6 @@ const siteData = getTranslatedData("siteData", currLocale);
 
         <div class="bg-border mx-6 h-8 w-px"></div>
       </div>
-
-      <div class="flex items-center space-x-2">
-        <Search />
-
-        {
-          siteData.navSocials && siteData.navSocials.length > 0 && (
-            <div class="flex items-center space-x-2">
-              {siteData.navSocials?.map((social) => (
-                <SocialIconNav {...social} size="md" />
-              ))}
-            </div>
-          )
-        }
-
         <ThemeToggle class="hidden md:flex" size="md" />
 
         {locales.length > 1 && <LanguageSelect class="ml-1 hidden md:flex" />}
