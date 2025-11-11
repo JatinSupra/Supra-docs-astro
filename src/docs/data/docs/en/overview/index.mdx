@@ -1,11 +1,13 @@
 ---
 title: Get Started
-description: Introduction to Supra EVM Beta
+description:  Start developing on Supra MultiVM - EVM
 tab: overview
 sidebar:
   order: 1
   label: Get Started
 ---
+
+import { CardGrid, LinkCard } from '@astrojs/starlight/components';
 
 Supra MultiVM is a core feature of the Supra Layer-1 blockchain that allows developers to deploy smart contracts written in different programming languages and from various blockchain ecosystems natively on the Supra network.
 
@@ -16,6 +18,16 @@ Supra's MultiVM architecture currently supports or plans to support:
 - **MoveVM:** For smart contracts written in the Move language (used by Aptos and Sui)
 - **EVM:** For Solidity smart contracts from the Ethereum ecosystem
 - **SolanaVM (SVM):** Coming soon, for smart contracts written in Rust (used by Solana)
+
+<CardGrid>
+  <LinkCard href="https://supra-docs-astro.vercel.app/docs/build-on-supraev" title="Build on EVM" description="Start Building and Deploy on EVM Using Hardhat, Foundry, Remix IDE." />
+
+  <LinkCard href="https://docs.supra.com/network/move" title="Build on MoveVM" description="Follow our guide to Start Building on MoveVM" />
+
+  <LinkCard href="https://supra-docs-astro.vercel.app/docs/deploy-contract" title="Learn and Deploy" description="Learn more about both VMs and building in MoveVM to developing on EVM." />
+
+  <LinkCard href="https://supra-docs-astro.vercel.app/docs/network-info" title="Network Information" description="Find the RPC URLs, chain IDs, and settings you need to connect to the Supra MultiVM network." />
+</CardGrid>
 
 ## Benefits of Supra MultiVM
 
